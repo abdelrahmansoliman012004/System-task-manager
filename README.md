@@ -121,4 +121,5 @@ See the [`LICENSE`](./LICENSE) file for full terms.
 ## 🧑‍💻 Author
 
 Developed by **abdelrahmansoliman012004** & **Omar-Elmasry-22** & **KarimElgebaly**
+
 Feel free to contribute or suggest improvements!

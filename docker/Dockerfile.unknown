@@ -1,0 +1,25 @@
+FROM ubuntu:latest
+
+
+RUN apt-get update && apt-get install -y \
+    bash \
+    sysstat \
+    lm-sensors \
+    smartmontools \
+    zenity \
+    iproute2 \
+    iftop \
+    vnstat \
+    nload \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+
+COPY sys_mon.sh /app/
+COPY project_os.sh /app/
+
+
+RUN chmod +x /app/sys_mon.sh /app/project_os.sh
+
+ENTRYPOINT ["/bin/bash", "/app/sys_mon.sh"]

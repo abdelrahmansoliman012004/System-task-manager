@@ -1,0 +1,13 @@
+# Ignore logs and system files
+logs/
+*.log
+*.pyc
+__pycache__/
+
+# VSCode and editor-specific
+.vscode/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
